@@ -11,7 +11,7 @@ const QRCodeScanner = () => {
 
   const getAPI = async () => {
     try {
-      const res = await axios.get("http://47.32.254.89:7000/api/getAll");
+      const res = await axios.get("https://47.32.254.89:7000/api/getAll");
       setData(res.data.data);
     } catch (error) {
       console.log(error);
